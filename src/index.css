@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+.ave{
+  font-family: 'Roboto', sans-serif;
+}
+.btn-design:hover{
+  box-shadow: 0 0 5px #D5CEA3, 0 0 25px #D5CEA3, 0 0 50px #D5CEA3;
+}
+@tailwind utilities;
+@layer utilities{
+  .leftarrow{
+    @apply border-t-[#1A120B] border-t-[25px] border-r-[#D5CEA3] border-r-[16px] border-b-[#1A120B] border-b-[25px] -left-4;
+  }
+  .rightarrow{
+    @apply border-t-[#1A120B] border-t-[25px] border-l-[#D5CEA3] border-l-[16px] border-b-[#1A120B] border-b-[25px] -right-4;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
